@@ -717,13 +717,16 @@ with tabs[2]:
         hover_data=["Nombre","Raza","Edad (años)"],
     )
     apply_theme(fig_3d)
-    fig_3d.update_layout(height=520, scene=dict(
+    fig_3d.update_layout(
+        height=520,
         paper_bgcolor="rgba(0,0,0,0)",
-        bgcolor="rgba(17,20,24,0.8)",
-        xaxis=dict(backgroundcolor="rgba(22,27,34,0.6)", gridcolor="rgba(201,168,76,0.1)"),
-        yaxis=dict(backgroundcolor="rgba(22,27,34,0.6)", gridcolor="rgba(201,168,76,0.1)"),
-        zaxis=dict(backgroundcolor="rgba(22,27,34,0.6)", gridcolor="rgba(201,168,76,0.1)"),
-    ))
+        scene=dict(
+            bgcolor="rgba(17,20,24,0.8)",
+            xaxis=dict(backgroundcolor="rgba(22,27,34,0.6)", gridcolor="rgba(201,168,76,0.1)"),
+            yaxis=dict(backgroundcolor="rgba(22,27,34,0.6)", gridcolor="rgba(201,168,76,0.1)"),
+            zaxis=dict(backgroundcolor="rgba(22,27,34,0.6)", gridcolor="rgba(201,168,76,0.1)"),
+        ),
+    )
     st.plotly_chart(fig_3d, use_container_width=True)
 
     # Cadencia vs Velocidad
