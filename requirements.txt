@@ -1,1 +1,11 @@
+streamlit
+pandas
 numpy
+plotly
+scipy
+scikit-learn
+Pillow
+openpyxl
+faker
+altair
+streamlit-option-menu
